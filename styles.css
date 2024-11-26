@@ -1,0 +1,253 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #FFEA9D;
+}
+
+/* Navbar Styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 35px;
+    background-color: #333;
+    border-bottom: 4px solid grey;
+}
+
+.navbar-title {
+    color: #FFEA9D;
+}
+
+.navbar-links {
+    display: flex;
+    gap: 20px; /* Space between links and icons */
+}
+
+.text-link {
+    color: #FFEA9D;
+    text-decoration: none;
+    font-size: 19px;
+    padding: 12px;
+}
+
+.text-link:hover {
+    text-decoration: underline;
+    border-radius: 10px;
+}
+
+.fa-instagram, 
+.fa-facebook, 
+.icons {
+    font-size: 28px;
+    color: #FFEA9D;
+}
+
+.icons {
+    padding: 9px;
+}
+
+.fa-instagram:hover, 
+.fa-facebook:hover {
+    background-color: transparent;
+}
+
+/* Responsive Navbar */
+@media (max-width: 675px) {
+    .icons {
+        display: none;
+    }
+}
+
+@media (max-width: 492px) {
+    .navbar-title {
+        font-size: 20px;
+    }
+
+    .text-link {
+        font-size: 17px;
+    }
+}
+
+/* Image and Gallery Styling */
+.rockbassimg {
+    width: 70%;
+    border: 4px solid grey;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.galleryStyle {
+    margin: 20px;
+    border: 4px solid grey;
+    height: 350px;
+}
+
+/* Grid Styling */
+.sectionGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(20, 5%);
+}
+
+@media (max-width: 500px) {
+    .sectionGrid {
+        min-height: 600px;
+    }
+}
+
+/* Content Grid Items */
+#content1 {
+    min-height: 300px;
+    margin-left: 15%;
+    grid-column-start: 1;
+    grid-row-start: 3;
+}
+
+@media (max-width: 800px) {
+    #content1 {
+        grid-row-start: 4;
+    }
+}
+
+@media (max-width: 500px) {
+    #content1 {
+        grid-row-start: 5;
+    }
+}
+
+#content2 {
+    font-size: 25px;
+    margin-right: 15%;
+    grid-column-start: 2;
+    grid-row-start: 7;
+    text-align: center;
+}
+
+@media (max-width: 1235px) {
+    #content2 {
+        grid-row-start: 5;
+    }
+}
+
+@media (max-width: 995px) {
+    #content2 {
+        grid-row-start: 4;
+    }
+}
+
+@media (max-width: 800px) {
+    #content2 {
+        grid-row-start: 4;
+        font-size: 21px;
+    }
+}
+
+#content3 {
+    line-height: 1.6;
+    font-size: 20px;
+    margin-right: 15%;
+    grid-column-start: 2;
+    grid-row-start: 8;
+    text-align: center;
+}
+
+@media (max-width: 1235px) {
+    #content3 {
+        grid-row-start: 6;
+    }
+}
+
+@media (max-width: 995px) {
+    #content3 {
+        grid-row-start: 5;
+    }
+}
+
+@media (max-width: 800px) {
+    #content3 {
+        grid-row-start: 5;
+        font-size: 16px;
+    }
+}
+
+/* Section Styling */
+.sectionEducation, 
+.sectionHobbies, 
+.sectionGoals {
+    text-align: center;
+    padding: 45px 20px;
+}
+
+.sectionEducation, 
+.sectionGoals {
+    background-color: #333;
+    color: #FFEA9D;
+    border-top: 4px solid grey;
+}
+
+.bottomBorder {
+    border-bottom: 4px solid grey;
+}
+
+/* Text and Utility Styles */
+ul {
+    text-align: center;
+    list-style-type: disc;
+    padding-left: 40px; /* Indentation */
+}
+
+h1 {
+    font-size: 25px;
+}
+
+.pStyling {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.underlineStyle {
+    text-decoration: underline;
+}
+
+.boldtextStyle {
+    font-weight: bold;
+}
+
+.notextDecoration {
+    text-decoration: none;
+}
+
+.largeBottomSpacing {
+    padding-bottom: 45px;
+}
+
+.bottomSpacing {
+    padding-bottom: 20px;
+}
+
+.a {
+    color: black;
+}
+
+.alignCenter {
+    margin: 5% 15% 25% 15%;
+}
+
+.bahiana-regular {
+    font-family: "Bahiana", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 33px;
+}
